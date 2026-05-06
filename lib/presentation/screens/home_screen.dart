@@ -83,15 +83,17 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: PageView(
-        controller: _controller,
-        onPageChanged: onPageChanged,
-        children: [
-          DashboardScreen(),
-          Placeholder(),
-          Placeholder(),
-          Placeholder(),
-        ],
+      body: SafeArea(
+        child: PageView(
+          controller: _controller,
+          onPageChanged: onPageChanged,
+          children: [
+            DashboardScreen(),
+            Placeholder(),
+            Placeholder(),
+            Placeholder(),
+          ],
+        ),
       ),
     );
   }

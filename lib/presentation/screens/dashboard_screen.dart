@@ -91,8 +91,8 @@ class DashboardScreen extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 15),
-          ConstrainedBox(
-            constraints: BoxConstraints(minHeight: 450, maxHeight: 650),
+          SizedBox(
+            height: 450,
             child: PageView(
               controller: pageNotifier.pageController,
               physics: NeverScrollableScrollPhysics(),

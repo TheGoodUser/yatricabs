@@ -77,9 +77,9 @@ class _PickUpCityTileState extends ConsumerState<PickUpCityTile> {
       focusNode: _focusNode,
       controller: _textController,
       maxLines: 1,
-      style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+      style: const TextStyle(fontSize: 16),
       decoration: InputDecoration(
-        hintText: 'Type City Name',
+        hintText: 'Enter pickup city',
         prefixIcon: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Image.asset('assets/icons/bird_view.png', height: 24),
