@@ -36,7 +36,7 @@ class _OutstationTripCardState extends State<OutstationTripCard> {
         const SizedBox(height: 10),
         // Card Details
         Container(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(20),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             color: Colors.white,

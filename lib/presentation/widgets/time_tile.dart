@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:intl/intl.dart';
 import 'package:yatri_cab/application/providers.dart';
 
 class TimeTile extends ConsumerWidget {

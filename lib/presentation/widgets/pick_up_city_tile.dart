@@ -147,17 +147,17 @@ class _PickUpCityTileState extends ConsumerState<PickUpCityTile> {
                 ),
                 child: CityRecommendations(
                   onCitySelected: (place) {
-                    // 1. Update text field
+                    // 1. update text field
                     _textController.text = place.displayName ?? "";
 
-                    // 2. Hide the portal
+                    // 2. hide the portal
                     _portalController.hide();
 
-                    // 3. Close keyboarrd
+                    // 3. close keyboarrd
                     _focusNode.unfocus();
 
-                    // 4. Update state to reflct non-empty text
-                    setState(() {});
+                    // 4. update state to reflct non-empty text
+                    ref.read(bookingProvider.notifier).updatePickup(place);
 
                     // Logic for saving the specific location object can go here
                   },

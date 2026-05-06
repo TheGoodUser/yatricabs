@@ -19,6 +19,6 @@ final placeSearchProvider =
     });
 
 // Booking related state management
-final bookingProvider = NotifierProvider<BookingState, BookingRequest>(() {
-  return BookingState();
+final bookingProvider = NotifierProvider<BookingNotifier, BookingRequest>(() {
+  return BookingNotifier();
 });

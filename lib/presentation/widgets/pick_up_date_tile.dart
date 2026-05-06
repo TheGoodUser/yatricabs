@@ -3,11 +3,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:yatri_cab/application/providers.dart';
 
-class PickUpDateTile extends ConsumerWidget {
+class PickUpDateTile extends ConsumerStatefulWidget {
   const PickUpDateTile({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<PickUpDateTile> createState() => _PickUpDateTileState();
+}
+
+class _PickUpDateTileState extends ConsumerState<PickUpDateTile> {
+  @override
+  Widget build(BuildContext context) {
     final bookingState = ref.watch(bookingProvider);
     return GestureDetector(
       onTap: () async {

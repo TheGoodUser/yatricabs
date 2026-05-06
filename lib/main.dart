@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:yatri_cab/presentation/screens/dashboard_screen.dart';
 import 'package:yatri_cab/presentation/screens/home_screen.dart';
 
 void main() {
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Yatri Cab',
       theme: ThemeData(
         primaryColor: Color(0xFF38B000),
         scaffoldBackgroundColor: Color(0xFF212728),
